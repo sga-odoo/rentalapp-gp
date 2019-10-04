@@ -1,0 +1,19 @@
+*.pyc
+app.db
+./tmp
+./build/*
+.idea
+env
+venv
+*.sublime*
+# sphinx build directories
+_build/
+
+# dotfiles
+.*
+!.gitignore
+!.mailmap
+# compiled python files
+*.py[co]
+__pycache__/
+
