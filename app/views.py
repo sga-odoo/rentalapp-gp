@@ -41,8 +41,8 @@ class ProductView(ModelView):
     ]
 
 
-class MyCustomView(BaseView):
-    route_base = "/"
+class MyView(BaseView):
+    route_base = "/myview"
 
     @expose('/<string:param1>')
     @has_access
@@ -68,5 +68,5 @@ appbuilder.add_view(
 appbuilder.add_view(
     ProductView, "List Product", icon="fa-envelope", category="Products"
 )
-appbuilder.add_view_no_menu(MyCustomView())
+appbuilder.add_view_no_menu(MyView())
 appbuilder.add_link("Method3", href='/myview/method1/john', category='My View')
